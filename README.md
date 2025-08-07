@@ -1,19 +1,19 @@
 # Application CNSS – Projet ECF 2
 
-Ce projet est une **application de gestion CNSS sécurisée**, développée dans le cadre de l'ECF 2 pour la formation "Concepteur Développeur d'Applications".
+Ce projet est une application de gestion CNSS sécurisée.
 
 ---
 
 ## Technos :
 
-- 🔹 **Node.js + Express** (API REST sécurisée)
-- 🔹 **MySQL** (Base de données relationnelle)
-- 🔹 **Electron** (Interface de bureau)
-- 🔹 **HTML / CSS / JS Vanilla**
-- 🔹 **Nodemailer** (envoi de mail de réinitialisation)
-- 🔹 **bcrypt** (hachage des mots de passe)
-- 🔹 **crypto** (génération de tokens)
-- 🔹 **CORS**, **dotenv**
+- **Node.js + Express** (API REST sécurisée)
+- **MySQL** (Base de données relationnelle)
+- **Electron** (Interface de bureau)
+- **HTML / CSS / JS Vanilla**
+- **Nodemailer** (envoi de mail de réinitialisation)
+- **bcrypt** (hachage des mots de passe)
+- **crypto** (génération de tokens)
+- **CORS**, **dotenv**
 
 ---
 
