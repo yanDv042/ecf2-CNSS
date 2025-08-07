@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' http://localhost:3001;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1366, initial-scale=1.0">
+  <title>CNSS - Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="logo-cnss">
+    <img src="logo-cnss.svg" alt="Logo CNSS" />
+  </div>
+
+  <div class="header-bar glass-header">
+    <div class="header-nav">
+      <span id="open-inscription">CRÉER MON COMPTE / SE CONNECTER</span>
+      <span>SERVICES</span>
+      <span>APPLICATION MA CNSS</span>
+      <span>GUIDE</span>
+    </div>
+  </div>
+
+  <div class="spacer-header"></div>
+
+  <div class="main-center">
+    <div class="panel">
+      <div class="panel-left">
+        <div class="panel-left-content">
+          <h2 style="color:#fff">BIENVENUE SUR LE PORTAIL ASSURÉ DE LA CNSS</h2>
+          <p style="color:#fff">
+            La connexion à votre espace privé vous donne un accès sécurisé à une panoplie de services en ligne.<br>
+            Suivez votre protection sociale en toute simplicité.
+          </p>
+          <button class="btn" id="open-inscription-btn">CRÉER MON COMPTE</button>
+        </div>
+      </div>
+
+      <div class="panel-right">
+        <h3>ACCÈS SÉCURISÉ</h3>
+        <div class="login-box">
+          <form id="login-form">
+            <input type="text" name="login" placeholder="N° Immatriculation / Email" required />
+            <input type="password" name="motdepasse" placeholder="Mot de passe" required />
+            <div class="login-actions">
+              <button type="submit" class="login-btn">ACCÉDER</button>
+              <div class="login-links">
+                <a href="#" id="open-inscription-link">Créer mon compte</a>
+                <a href="request-reset.html">Mot de passe oublié</a>
+                <a href="request-reset.html">J'ai un problème de connexion</a>
+              </div>
+            </div>
+            <div id="login-msg" style="color:red; margin-top:10px;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-bg" id="modal-inscription" style="display:none;">
+    <div class="modal-content">
+      <h2>Créer un nouveau compte assuré</h2>
+      <form id="inscription-form">
+        <input type="text" name="immatriculation" placeholder="N° d'immatriculation (9 chiffres)" required pattern="\d{9}" maxlength="9" />
+        <input type="text" name="nom" placeholder="Nom" required />
+        <input type="text" name="prenom" placeholder="Prénom" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="telephone" placeholder="Téléphone (+212...)" required pattern="\+\d{11,14}" />
+        <input type="password" name="password" placeholder="Mot de passe" required minlength="6" />
+        <div class="modal-actions">
+          <button type="submit" class="btn">S'inscrire</button>
+          <button type="button" class="btn btn-cancel" id="close-modal">Annuler</button>
+        </div>
+        <div id="insc-msg" style="color:red; margin-top:10px;"></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bar glass-footer">
+    <span>© CNSS 2020 tous droits réservés</span>
+    <span>
+      <a href="#">Conditions d'utilisation</a> /
+      <a href="#">Mentions légales</a> /
+      <a href="#">Contact</a>
+    </span>
+  </div>
+<script src="app.js"></script>
+</body>
+</html>

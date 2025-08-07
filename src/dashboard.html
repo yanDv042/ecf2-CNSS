@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1366, initial-scale=1.0">
+  <title>Tableau de bord - Application</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="header-bar">
+    <div class="header-nav">
+      <span>CRÉER MON COMPTE / SE CONNECTER</span>
+      <span>SERVICES</span>
+      <span>APPLICATION MA CNSS</span>
+      <span>GUIDE</span>
+    </div>
+  </div>
+  <div class="spacer-header"></div>
+  <main class="dashboard-center">
+    <section class="dashboard-card glass">
+      <h2>Bienvenue <span id="prenom-dashboard">Yannis</span>  🌐 </h2>
+      <div class="user-infos">
+        <div><strong>Immatriculation :</strong> <span id="immat-dashboard">   123456789</span></div>
+        <div><strong>Nom :</strong> <span id="nom-dashboard">Bourhil</span></div>
+        <div><strong>Prénom :</strong> <span id="prenom-dashboard2">Yannis</span></div>
+        <div><strong>Email :</strong> <span id="email-dashboard">yannis@mail.com</span></div>
+        <div><strong>Téléphone :</strong> <span id="tel-dashboard">+212600000000</span></div>
+      </div>
+      <button class="logout-btn" id="logout-btn">Déconnexion</button>
+    </section>
+  </main>
+  <footer class="footer-bar glass-footer">
+    <span>© Application 2024 tous droits réservés</span>
+    <span>
+      <a href="#">Conditions d'utilisations</a> /
+      <a href="#">Mentions légales</a> /
+      <a href="#">Contact</a>
+    </span>
+  </footer>
+  <script src="dashboard.js"></script>
+</body>
+</html>

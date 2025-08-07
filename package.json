@@ -1,0 +1,23 @@
+{
+  "name": "cnss-app",
+  "version": "1.0.0",
+  "description": "Application CNSS avec Electron et serveur Express",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "serve": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^37.2.4"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.3",
+    "nodemailer": "^7.0.5"
+  }
+}
